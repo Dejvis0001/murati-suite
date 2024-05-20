@@ -112,6 +112,9 @@ li {
     background-color: #d7bc47;
     width: 100%;
 }
+.nav-link:focus {
+    color: unset;
+}
 .nav-item {
     padding-top: 10px;
 }
@@ -152,8 +155,67 @@ li {
     overflow: hidden;
 }
 /*Index-Home*/
+#home-owl .owl-carousel .item {
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+.provaa {margin-top: 25px;}
+#home-owl .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.ot3 {
+    font-size: 40px;
+}
+.ot1 {
+    font-size: 55px;
+}
+.lower-content{margin-top: 20px;}
 /*Index-About*/
+.sec-title .sub-title {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Lobster', cursive !important;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #d7bc47;
+}
+.sec-title h2 {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    line-height: 60px;
+    margin: 0px;
+    font-family: "EB Garamond", serif;
+    letter-spacing: 2.9px;
+    font-weight: 200;
+    position: relative;
+    text-transform: uppercase;
+}
+.sec-title {
+    position: relative;
+    display: block;
+    margin: 40px 0 40px 0;
+}
+.content-box-text h3 {
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    color: #d7bc47;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
 /*Index-Rooms*/
+html body main section.container.facilities.mb-5 div.row div.col-md-4 div.facility div section.container h3{text-align: center;}
 /*Index-Gallery*/
 .gallery .slide {
     height: 30rem;
@@ -224,6 +286,16 @@ facility i {
 .facility p {
     margin-top: 1rem;
     color: #4F5655;
+    font-size: 22px;
+}
+#about.container div.row div.col-md-7 div.content h1 {
+    font-family: 'Lora';
+    font-size: 85px;
+    color: #f1f1f1;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 500;
 }
 /*Index-Testimonials*/
 .jumbotron {
@@ -404,8 +476,13 @@ facility i {
     justify-content: center;
     margin-top: 100px;
 }
+header .navbar .prova {
+    margin: 0;
+    margin-left: 0px;
+    margin-left: auto;
+}
 .details-button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #d7bc47;
     color: #ffffff;
     border: none;
@@ -443,11 +520,9 @@ facility i {
     color: white !important;
     font-size: 35px !important;
 }
-.lower-content {
-    margin-top: 25px;
-}
 .lower-content .text {
     margin-top: 10px;
+    font-size: 20px;
 }
 #room-gallery-1 .item img,
 #room-gallery-2 .item img,
@@ -505,12 +580,89 @@ facility i {
     width: 100%;
     height: auto;
 }
+.ot-heading h2 {
+    letter-spacing: 1px;
+    font: 700 36px 'Montserrat';
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.ot-heading .sub {
+    font: 300 16px 'Hind';
+    margin-bottom: 5px;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.item.room-item {
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-color: #e1e1e1;
+}
+.accomd-modations-room_1 {
+    border: 1px solid #9a9a9a;
+}
+.accomd-modations-room_1 .img {
+    position: relative;
+}
+.accomd-modations-room_1 .img a {
+    display: inline-block;
+    overflow: hidden;
+}
+.accomd-modations-room_1 .img img {
+    width: 100%;
+}
+.item.room-item .title {
+    padding: 15px 0 5px 0;
+}
+.item.room-item .title a {
+    font: 400 28px 'Montserrat';
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+.item.room-item .info p {
+    display: inline-block;
+    max-width: 80px;
+    margin: 0 20px;
+}
+.item.room-item .info p .number {
+    font: 300 24px 'Montserrat';
+}
+.item.room-item .info p span {
+    font: 300 12px 'Montserrat';
+    display: block;
+}
+.butttonrooms {
+    margin: 35px 0 35px 0;
+}
 /*General*/
+.row-20 {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.pt80 {
+    padding-top: 80px;
+}
+.pb30 {
+    padding-bottom: 30px;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
 .mb-60 {
     margin-bottom: 60px;
 }
 .ft40 {
     font-size: 40px;
+    margin-top: -45px;
+}
+.mt-40 {
+    margin-top: 40px;
 }
 .mt-125 {
     margin-top: 125px;
@@ -726,14 +878,43 @@ ul.link_menu li a:hover {
     color: #d7bc47;
     transform: translate(10px);
 }
+.mbtt {
+    margin-top: 25px;
+}
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
     ::-webkit-scrollbar {
         width: 7px;
     }
+    .ft40 {
+        font-size: 30px;
+        margin-top: -25px;
+    }
+    .carousel-caption {
+        width: 100%;
+    }
+    .ot3 {
+        font-size: 20px;
+    }
+    .ot1 {
+        font-size: 35px;
+    }
+    .provaa {
+        margin-top: 35px;
+    }
+    .mbtt {
+        text-align: center;
+        margin: 25px 0 25px 0;
+    }
+    #about.container div.row div.col-md-7 div.content h1 {
+        font-size: 50px;
+    }
     .footer h4 {
         text-align: center;
         display: inline-block;
+    }
+    #home-owl .owl-carousel .item {
+        height: 70vh !important;
     }
     /*General Head*/
     #contact-head h1,
@@ -760,6 +941,23 @@ ul.link_menu li a:hover {
     }
     .mbr-0 {
         margin-right: 0px;
+    }
+    header .navbar .prova {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        padding-top: unset;
+    }
+    .mt-40 {
+        margin-bottom: 40px;
+    }
+    html body main div.jumbotron.jumbotron-fluid.d-flex.justify-content-center.align-items-center.text-center div.container section.review-section div.swiper.review-slider.swiper-initialized.swiper-horizontal.swiper-backface-hidden div.swiper-button-prev.swiper-arrow,
+    html body main div.jumbotron.jumbotron-fluid.d-flex.justify-content-center.align-items-center.text-center div.container section.review-section div.swiper.review-slider.swiper-initialized.swiper-horizontal.swiper-backface-hidden div.swiper-button-next.swiper-arrow {
+        display: none;
     }
     /*Gallery*/
     .s-gallery .gallery-main {
